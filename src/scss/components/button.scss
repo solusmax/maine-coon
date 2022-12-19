@@ -1,0 +1,32 @@
+.button {
+  display: block;
+  min-width: 140px;
+  max-width: 280px;
+  min-height: 40px;
+  margin: 0;
+  padding: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 1px solid rgba($color-brown-100, 0.5);
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: $color-white;
+  text-decoration: none;
+
+  transition: 0.15s;
+
+  &:hover {
+    background-color: rgba($color-brown-100, 0.1);
+  }
+
+  &:active {
+    color: rgba($color-white, 0.7);
+
+    background-color: rgba($color-brown-100, 0.05);
+  }
+}

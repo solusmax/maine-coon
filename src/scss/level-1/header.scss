@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: center;
+
+  background-color: $color-brown-600;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: $desktop-width;
+  padding-left: $mobile-padding;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-right: $mobile-padding;
+}

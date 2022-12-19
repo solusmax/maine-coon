@@ -1,0 +1,85 @@
+.promo {
+  --background-cat-width: 275px;
+  --background-cat-height: 256px;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  padding-top: 22px;
+  padding-bottom: 276px;
+
+  background-color: $color-brown-600;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: var(--background-cat-width);
+    height: var(--background-cat-height);
+
+    background-image: url("../img/promo/cat.png");
+    background-size: var(--background-cat-width) var(--background-cat-height);
+    background-repeat: no-repeat;
+  }
+}
+
+.promo__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: $desktop-width;
+  padding-left: $mobile-padding;
+  padding-right: $mobile-padding;
+}
+
+.promo__title {
+  margin: 0;
+  margin-bottom: 17px;
+  padding: 0;
+  text-align: center;
+
+  font-family: $font-yeseva-one;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.promo__location {
+  order: -1;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-brown-100;
+}
+
+.promo__tagline {
+  margin: 0;
+  margin-bottom: 33px;
+  padding: 0;
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-brown-100;
+}
+
+.promo__show-pets {
+  margin: 0;
+  padding: 0;
+}
+
+.promo__socials {
+  display: none;
+}

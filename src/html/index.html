@@ -12,30 +12,189 @@
   </div>
 
   <header class="page__header header">
-    <p class="header__logo logo">
-      <img class="logo__img" src="img/logo/logo.svg" alt="Логотип «Питомника Мейн-Кунов».">
-    </p>
+    <div class="header__inner">
+      <p class="header__logo logo">
+        <img class="logo__img" src="img/logo/logo.svg" alt="Логотип «Питомника Мейн-Кунов».">
+      </p>
+    </div>
   </header>
 
   <main class="page__main">
     <h1 class="visually-hidden">Питомник Мейн-Мунов</h1>
 
     <section class="page__promo promo">
-      <h2 class="promo__title">Питомник Мейн-Мунов</h2>
+      <div class="promo__inner">
+        <h2 class="promo__title">Питомник Мейн-Мунов</h2>
+        <p class="promo__location">Новосибирск</p>
+        <p class="promo__tagline">Первый питомник с&nbsp;расширенным спектром услуг</p>
+        <p class="promo__show-pets">
+          <a class="promo__show-pets-link button" href="#pets">Смотреть котиков</a>
+        </p>
+        <div class="promo__socials socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link" href="https://vk.com">
+                <span class="visually-hidden">VK</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="https://twitter.com">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="https://facebook.com">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-      <p class="promo__location">Новосибирск</p>
+    <section class="page__pets pets" id="pets">
+      <div class="pets__inner">
+        <h2 class="pets__title page__title">Питомцы</h2>
+        <p class="pets__description">Все представители нашего питомника имеют ветеринарный паспорт с&nbsp;отметками о&nbsp;прививках и&nbsp;документ с&nbsp;родословной</p>
+        <ul class="pets__photos">
+          <li class="pets__photo">
+            <picture>
+              <source srcset="img/pets/pet-01-tablet.webp" media="(min-width: 768px)" type="image/webp">
+              <source srcset="img/pets/pet-01-tablet.png" media="(min-width: 768px)">
+              <source srcset="img/pets/pet-01.webp" type="image/webp">
+              <img class="pets__img" src="img/pets/pet-01.jpg" alt="Фото кота.">
+            </picture>
+          </li>
+          <li class="pets__photo">
+            <picture>
+              <source srcset="img/pets/pet-02-desktop.webp" media="(min-width: 1366px)" type="image/webp">
+              <source srcset="img/pets/pet-02-desktop.png" media="(min-width: 1366px)">
+              <source srcset="img/pets/pet-02-tablet.webp" media="(min-width: 768px)" type="image/webp">
+              <source srcset="img/pets/pet-02-tablet.png" media="(min-width: 768px)">
+              <source srcset="img/pets/pet-02.webp" type="image/webp">
+              <img class="pets__img" src="img/pets/pet-02.jpg" alt="Фото кота.">
+            </picture>
+          </li>
+          <li class="pets__photo">
+            <picture>
+              <source srcset="img/pets/pet-03-desktop.webp" media="(min-width: 1366px)" type="image/webp">
+              <source srcset="img/pets/pet-03-desktop.png" media="(min-width: 1366px)">
+              <source srcset="img/pets/pet-03-tablet.webp" media="(min-width: 768px)" type="image/webp">
+              <source srcset="img/pets/pet-03-tablet.png" media="(min-width: 768px)">
+              <source srcset="img/pets/pet-03.webp" type="image/webp">
+              <img class="pets__img" src="img/pets/pet-03.jpg" alt="Фото кота.">
+            </picture>
+          </li>
+        </ul>
+        <p class="pets__show-more button">Смотреть больше</p>
+      </div>
+    </section>
 
-      <p class="promo__tagline">Первый питомник с расширенным спектром услуг</p>
+    <section class="page__breed breed">
+      <div class="breed__inner">
+        <h2 class="breed__title page__title">Особенности породы</h2>
+        <p class="breed__description">Мейн-Кун&nbsp;&mdash; это порода, которая вызывает к&nbsp;себе уважение. Приобретая в&nbsp;свой дом этого питомца, вы&nbsp;получите умное животное, которому нет равных</p>
+        <ul class="breed__list">
+          <li class="breed__item">Легко уживается в&nbsp;семьях с&nbsp;детьми или другими животными</li>
+          <li class="breed__item">Выполняет команды как дрессированная собака</li>
+          <li class="breed__item">Вес может достигать 12&nbsp;кг, а&nbsp;длина 1&nbsp;м</li>
+          <li class="breed__item">Внешний вид этой кошки похож на&nbsp;дикую рысь</li>
+        </ul>
+      </div>
+    </section>
 
-      <p class="promo__show-pets">
-        <a class="promo__show-pets-link button" href="#pets">Смотреть котиков</a>
-      </p>
+    <section class="page__features features">
+      <div class="features__inner">
+        <h2 class="features__title page__title">Почему именно&nbsp;мы?</h2>
+        <p class="features__description">Приобретая животное в&nbsp;нашем питомнике, вы&nbsp;получите</p>
+        <ul class="features__list">
+          <li class="features__item">Бесплатное ветеринарное обслуживание 5&nbsp;лет</li>
+          <li class="features__item">Консультирование по&nbsp;любому вопросу 24&nbsp;часа в&nbsp;сутки</li>
+          <li class="features__item">Индивидуальный подбор питания для вашего кота</li>
+        </ul>
+      </div>
+    </section>
 
-      <div class="promo__socials socials">
+    <section class="page__care care">
+      <div class="care__inner">
+        <h2 class="care__title page__title">Об&nbsp;уходе за&nbsp;Мейн-Куном</h2>
+        <ul class="care__list">
+          <li class="care__item">
+            <a class="care__link" href="care.html#fur">
+              <h3 class="care__item-title">Шерсть</h3>
+              <p class="care__description">Мы&nbsp;разработали 8&nbsp;правил, следуя которым, шерсть вашего кота всегда будет блестящей, мягкой и&nbsp;послушной</p>
+            </a>
+          </li>
+          <li class="care__item">
+            <a class="care__link" href="care.html#ears">
+              <h3 class="care__item-title">Уши и&nbsp;глаза</h3>
+              <p class="care__description">Владельцам котов необходимо регулярно осматривать ушки и&nbsp;глаза своих питомцев, ведь это может быть признаками заболевания</p>
+            </a>
+          </li>
+          <li class="care__item">
+            <a class="care__link" href="care.html#claws">
+              <h3 class="care__item-title">Когти</h3>
+              <p class="care__description">Нужно&nbsp;ли стричь когти? Это мы&nbsp;и&nbsp;выясним, плюс ко&nbsp;всему расскажем как подобрать идеальную когтеточку</p>
+            </a>
+          </li>
+          <li class="care__item">
+            <a class="care__link" href="care.html#food">
+              <h3 class="care__item-title">Питание</h3>
+              <p class="care__description">В&nbsp;нашем питомнике существует два подхода: натуральное питание и&nbsp;питание промышленными кормами, но&nbsp;выбирать только вам</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="page__faq faq">
+      <div class="faq__inner">
+        <h2 class="faq__title page__title">Вопрос-Ответ</h2>
+        <p class="faq__description">Мы&nbsp;ответим на&nbsp;самые популярные ваши вопросы</p>
+        <ol class="faq__list">
+          <li class="faq__item">
+            <h3 class="faq__question">С&nbsp;какого возраста можно забирать котенка из&nbsp;питомника?</h3>
+            <div class="faq__answer">
+              <p class="faq__answer-text">Есть важная причина, почему котенка стоит забирать домой только после трех месяцев,&nbsp;&mdash; это вакцинация. Первые прививки животному делают в&nbsp;возрасте 8&nbsp;недель. Ревакцинация проводится через 3-4&nbsp;недели. То&nbsp;есть котенок, покидающий дом позднее 12&nbsp;недель, максимально защищен от&nbsp;различных вирусов и&nbsp;инфекций.</p>
+              <p class="faq__answer-text">Так что, чтобы в&nbsp;дома появился психически и&nbsp;физически здоровый котенок, игривый, жизнерадостный, самостоятельный и&nbsp;воспитанный, не&nbsp;спешите забирать его от&nbsp;кошки-мамы раньше трех месяцев.</p>
+            </div>
+          </li>
+          <li class="faq__item">
+            <h3 class="faq__question">Как зарезервировать котенка?</h3>
+            <div class="faq__answer">
+              <p class="faq__answer-text">Свяжитесь с&nbsp;нами.</p>
+            </div>
+          </li>
+          <li class="faq__item">
+            <h3 class="faq__question">Можно&nbsp;ли купить кота, если я&nbsp;живу в&nbsp;другом городе?</h3>
+            <div class="faq__answer">
+              <p class="faq__answer-text">Можно.</p>
+            </div>
+          </li>
+          <li class="faq__item">
+            <h3 class="faq__question">Как подготовить дом к&nbsp;приему нового питомца?</h3>
+            <div class="faq__answer">
+              <p class="faq__answer-text">Спрячьте собак.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page__footer footer">
+    <div class="footer__inner">
+      <address class="footer__contacts">
+        <p class="footer__address">Новосибирск, Пушкинский проспект,&nbsp;19</p>
+        <p class="footer__phone-wrapper">
+          <a class="footer__phone" href="tel:+73839006465">+7&nbsp;(383)&nbsp;900&#8209;64&#8209;65</a>
+        </p>
+      </address>
+      <div class="footer__socials socials">
         <ul class="socials__list">
           <li class="socials__item">
-            <a class="socials__link" href="https://vk.com">
-              <span class="visually-hidden">VK</span>
+            <a class="socials__link" href="https://facebook.com">
+              <span class="visually-hidden">Facebook</span>
             </a>
           </li>
           <li class="socials__item">
@@ -44,180 +203,16 @@
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link" href="https://facebook.com">
-              <span class="visually-hidden">Facebook</span>
+            <a class="socials__link" href="https://vk.com">
+              <span class="visually-hidden">VK</span>
             </a>
           </li>
         </ul>
       </div>
-    </section>
-
-    <section class="page__pets pets" id="pets">
-      <h2 class="pets__title page__title">Питомцы</h2>
-
-      <p class="pets__description">Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной</p>
-
-      <ul class="pets__photos">
-        <li class="pets__photo">
-          <picture>
-            <source srcset="img/pets/pet-01-tablet.webp" media="(min-width: 768px)" type="image/webp">
-            <source srcset="img/pets/pet-01-tablet.png" media="(min-width: 768px)">
-
-            <source srcset="img/pets/pet-01.webp" type="image/webp">
-            <img class="pets__img" src="img/pets/pet-01.jpg" alt="Фото кота.">
-          </picture>
-        </li>
-        <li class="pets__photo">
-          <picture>
-            <source srcset="img/pets/pet-02-desktop.webp" media="(min-width: 1366px)" type="image/webp">
-            <source srcset="img/pets/pet-02-desktop.png" media="(min-width: 1366px)">
-
-            <source srcset="img/pets/pet-02-tablet.webp" media="(min-width: 768px)" type="image/webp">
-            <source srcset="img/pets/pet-02-tablet.png" media="(min-width: 768px)">
-
-            <source srcset="img/pets/pet-02.webp" type="image/webp">
-            <img class="pets__img" src="img/pets/pet-02.jpg" alt="Фото кота.">
-          </picture>
-        </li>
-        <li class="pets__photo">
-          <picture>
-            <source srcset="img/pets/pet-03-desktop.webp" media="(min-width: 1366px)" type="image/webp">
-            <source srcset="img/pets/pet-03-desktop.png" media="(min-width: 1366px)">
-
-            <source srcset="img/pets/pet-03-tablet.webp" media="(min-width: 768px)" type="image/webp">
-            <source srcset="img/pets/pet-03-tablet.png" media="(min-width: 768px)">
-
-            <source srcset="img/pets/pet-03.webp" type="image/webp">
-            <img class="pets__img" src="img/pets/pet-03.jpg" alt="Фото кота.">
-          </picture>
-        </li>
-      </ul>
-
-      <p class="pets__show-more button">Смотреть больше</p>
-    </section>
-
-    <section class="page__breed breed">
-      <h2 class="breed__title page__title">Особенности породы</h2>
-
-      <p class="breed__description">Мейн-Кун — это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца, вы получите умное животное, которому нет равных</p>
-
-      <ul class="breed__list">
-        <li class="breed__item">Легко уживается в семьях с детьми или другими животными</li>
-        <li class="breed__item">Выполняет команды как дрессированная собака</li>
-        <li class="breed__item">Вес может достигать 12 кг, а длина 1 м</li>
-        <li class="breed__item">Внешний вид этой кошки похож на дикую рысь</li>
-      </ul>
-    </section>
-
-    <section class="page__features features">
-      <h2 class="features__title page__title">Почему именно мы?</h2>
-
-      <p class="features__description">Приобретая  животное в нашем питомнике, вы получите</p>
-
-      <ul class="features__list">
-        <li class="features__item">Бесплатное ветеринарное обслуживание 5 лет</li>
-        <li class="features__item">Консультирование по любому вопросу 24 часа в сутки</li>
-        <li class="features__item">Индивидуальный подбор питания для вашего кота</li>
-      </ul>
-    </section>
-
-    <section class="page__care care">
-      <h2 class="care__title page__title">Об уходе за Мейн-Куном</h2>
-
-      <ul class="care__list">
-        <li class="care__item">
-          <a class="care__link" href="care.html#fur">
-            <h3 class="care__item-title">Шерсть</h3>
-            <p class="care__description">Мы разработали 8 правил, следуя которым, шерсть вашего кота всегда будет блестящей, мягкой и послушной</p>
-          </a>
-        </li>
-        <li class="care__item">
-          <a class="care__link" href="care.html#ears">
-            <h3 class="care__item-title">Уши и глаза</h3>
-            <p class="care__description">Владельцам котов необходимо регулярно осматривать ушки и глаза своих питомцев, ведь это может быть признаками заболевания</p>
-          </a>
-        </li>
-        <li class="care__item">
-          <a class="care__link" href="care.html#claws">
-            <h3 class="care__item-title">Когти</h3>
-            <p class="care__description">Нужно ли стричь когти? Это мы и выясним, плюс ко всему расскажем как подобрать идеальную когтеточку</p>
-          </a>
-        </li>
-        <li class="care__item">
-          <a class="care__link" href="care.html#food">
-            <h3 class="care__item-title">Питание</h3>
-            <p class="care__description">В нашем питомнике существует два подхода: натуральное питание и питание промышленными кормами, но выбирать только вам</p>
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <section class="page__faq faq">
-      <h2 class="faq__title page__title">Вопрос-Ответ</h2>
-
-      <p class="faq__description">Мы ответим на самые популярные ваши вопросы</p>
-
-      <ol class="faq__list">
-        <li class="faq__item">
-          <h3 class="faq__question">С какого возраста можно забирать котенка из питомника?</h3>
-          <div class="faq__answer">
-            <p class="faq__answer-text">Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3-4 недели. То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.</p>
-            <p class="faq__answer-text">Так что, чтобы в дома появился психически и физически здоровый котенок, игривый, жизнерадостный, самостоятельный и воспитанный, не спешите забирать его от кошки-мамы раньше трех месяцев.</p>
-          </div>
-        </li>
-        <li class="faq__item">
-          <h3 class="faq__question">Как зарезервировать котенка?</h3>
-          <div class="faq__answer">
-            <p class="faq__answer-text">Свяжитесь с нами.</p>
-          </div>
-        </li>
-        <li class="faq__item">
-          <h3 class="faq__question">Можно ли купить кота, если я живу в другом городе?</h3>
-          <div class="faq__answer">
-            <p class="faq__answer-text">Можно.</p>
-          </div>
-        </li>
-        <li class="faq__item">
-          <h3 class="faq__question">Как подготовить дом к приему нового питомца?</h3>
-          <div class="faq__answer">
-            <p class="faq__answer-text">Спрячьте собак.</p>
-          </div>
-        </li>
-      </ol>
-    </section>
-  </main>
-
-  <footer class="page__footer footer">
-    <address class="footer__contacts">
-      <p class="footer__address">Новосибирск, Пушкинский проспект, 19</p>
-      <p>
-        <a class="footer__phone" href="tel:+73839006465">+7 (383) 900-64-65</a>
+      <p class="footer__logo logo">
+        <img class="logo__img" src="img/logo/logo.svg" alt="Логотип «Питомника Мейн-Кунов».">
       </p>
-    </address>
-
-    <div class="footer__socials socials">
-      <ul class="socials__list">
-        <li class="socials__item">
-          <a class="socials__link" href="https://facebook.com">
-            <span class="visually-hidden">Facebook</span>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="https://twitter.com">
-            <span class="visually-hidden">Twitter</span>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="https://vk.com">
-            <span class="visually-hidden">VK</span>
-          </a>
-        </li>
-      </ul>
     </div>
-
-    <p class="footer__logo logo">
-      <img class="logo__img" src="img/logo/logo.svg" alt="Логотип «Питомника Мейн-Кунов».">
-    </p>
   </footer>
 
   <script src="js/script.min.js"></script>

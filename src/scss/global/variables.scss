@@ -3,7 +3,28 @@
 $fonts: "../fonts";
 $img: "../img";
 
+// Брейкпоинты
+
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1366px;
+
+$mobile-padding: 15px;
+$tablet-padding: 60px;
+
+// Шрифты
+
+$font-roboto: "Roboto", "Arial", sans-serif;
+$font-yeseva-one: "Yeseva One", "Times New Roman", serif;
+
 // Цвета
 
 $color-black: #000000;
 $color-white: #ffffff;
+
+$color-brown-20: #fdf2e6;
+$color-brown-25: #d6ccc2;
+$color-brown-50: #ddd0c3;
+$color-brown-100: #a07b50;
+$color-brown-500: #1f1c1d;
+$color-brown-600: #181617;
