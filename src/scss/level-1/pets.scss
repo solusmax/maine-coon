@@ -3,6 +3,11 @@
   justify-content: center;
   padding-top: 54px;
   padding-bottom: 54px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
 }
 
 .pets__inner {
@@ -13,6 +18,11 @@
   max-width: $desktop-width;
   padding-left: $mobile-padding;
   padding-right: $mobile-padding;
+
+  @media (min-width: $tablet-width) {
+    padding-left: $tablet-padding;
+    padding-right: $tablet-padding;
+  }
 }
 
 .pets__title {
@@ -25,6 +35,11 @@
   font-weight: 400;
   font-size: 28px;
   line-height: 32px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
 
 .pets__description {
@@ -37,6 +52,15 @@
   font-size: 14px;
   line-height: 20px;
   color: $color-brown-100;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 530px;
+  }
 }
 
 .pets__photos {
@@ -48,11 +72,48 @@
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 214px 1fr;
+    column-gap: 30px;
+    row-gap: 37px;
+    align-items: start;
+    margin-bottom: 56px;
+  }
 }
 
 .pets__photo {
   &:not(:last-child) {
     margin-bottom: 10px;
+  }
+
+  @media (min-width: 670px) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &--first {
+      grid-column: 2;
+      grid-row: 1 / 3;
+    }
+
+    &--second {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    &--third {
+      grid-column: 1;
+      grid-row: 2;
+    }
   }
 }
 
@@ -60,6 +121,32 @@
   display: block;
   width: 234px;
   height: 248px;
+
+  @media (min-width: 670px) {
+    width: 474px;
+    height: 494px;
+  }
+}
+
+.pets__photo--first .pets__img {
+  @media (min-width: $desktop-width) {
+    width: 474px;
+    height: 485px;
+  }
+}
+
+.pets__photo--second .pets__img {
+  @media (min-width: $desktop-width) {
+    width: 517px;
+    height: 214px;
+  }
+}
+
+.pets__photo--third .pets__img {
+  @media (min-width: $desktop-width) {
+    width: 517px;
+    height: 233px;
+  }
 }
 
 .pets__show-more {
