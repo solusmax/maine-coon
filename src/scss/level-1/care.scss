@@ -8,6 +8,16 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 89px;
+    padding-bottom: 104px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 85px;
+    padding-bottom: 98px;
+  }
 }
 
 .care__inner {
@@ -15,6 +25,17 @@
   max-width: $desktop-width;
   padding-left: $mobile-padding;
   padding-right: $mobile-padding;
+
+  @media (min-width: $tablet-width) {
+    padding-left: $tablet-padding;
+    padding-right: $tablet-padding;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .care__title {
@@ -27,6 +48,17 @@
   font-weight: 400;
   font-size: 28px;
   line-height: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 47px;
+  }
 }
 
 .care__list {
@@ -37,6 +69,15 @@
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 41px;
+    row-gap: 43px;
+    align-items: start;
+    width: 1160px;
+  }
 }
 
 .care__item {
@@ -48,6 +89,24 @@
 
   &:not(:last-child) {
     margin-bottom: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 559px;
+    min-width: auto;
+    max-width: none;
+
+    &:not(:last-child) {
+      margin-bottom: 23px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -63,7 +122,7 @@
   width: 100%;
   height: 100%;
   padding-left: 25px;
-  padding-right: 54px;
+  padding-right: calc(var(--care-right-block-width) + 8px);
   padding-top: 25px;
   padding-bottom: 25px;
 
@@ -114,6 +173,16 @@
       opacity: 0.7;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    --care-right-block-width: 60px;
+
+    min-height: 190px;
+    padding-left: 48px;
+    padding-right: calc(var(--care-right-block-width) + 48px);
+    padding-top: 39px;
+    padding-bottom: 48px;
+  }
 }
 
 .care__item-title {
@@ -125,6 +194,13 @@
   font-size: 18px;
   line-height: 21px;
   color: $color-brown-100;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 8px;
+
+    font-size: 22px;
+    line-height: 26px;
+  }
 }
 
 .care__link:active .care__item-title {
@@ -138,4 +214,9 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 23px;
+  }
 }
