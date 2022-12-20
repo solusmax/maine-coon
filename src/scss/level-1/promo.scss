@@ -25,6 +25,37 @@
     background-size: var(--background-cat-width) var(--background-cat-height);
     background-repeat: no-repeat;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 57px;
+    padding-bottom: 40px;
+
+    &::before {
+      --background-cat-width: 651px;
+      --background-cat-height: 534px;
+
+      background-image: url("../img/promo/cat-tablet.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
+    padding-bottom: 120px;
+
+    &::before {
+      --background-cat-width: 1068px;
+      --background-cat-height: 684px;
+
+      right: calc(50% - var(--background-cat-width) + 336px);
+
+      background-image: linear-gradient(
+          90deg,
+          transparent 70%,
+          $color-brown-600
+        ),
+        url("../img/promo/cat-desktop.png");
+    }
+  }
 }
 
 .promo__inner {
@@ -36,6 +67,18 @@
   max-width: $desktop-width;
   padding-left: $mobile-padding;
   padding-right: $mobile-padding;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    align-items: start;
+    padding-left: $tablet-padding;
+    padding-right: $tablet-padding;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1046px;
+  }
 }
 
 .promo__title {
@@ -48,6 +91,21 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 19px;
+    padding-right: 340px;
+    text-align: left;
+
+    font-size: 52px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 400px;
+    margin-bottom: 17px;
+    padding-right: 0;
+  }
 }
 
 .promo__location {
@@ -61,6 +119,20 @@
   font-size: 14px;
   line-height: 20px;
   color: $color-brown-100;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 18px;
+    padding-right: 340px;
+    text-align: left;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 400px;
+    padding-right: 0;
+  }
 }
 
 .promo__tagline {
@@ -73,13 +145,52 @@
   font-size: 14px;
   line-height: 20px;
   color: $color-brown-100;
+
+  @media (min-width: $tablet-width) {
+    max-width: 300px;
+    margin-bottom: 49px;
+    text-align: left;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: 880px) {
+    max-width: none;
+    padding-right: 340px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 310px;
+    margin-bottom: 47px;
+    padding-right: 0;
+  }
 }
 
 .promo__show-pets {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .promo__socials {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 103px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: -85px;
+    bottom: -80px;
+
+    display: flex;
+    width: 25px;
+    min-height: 103px;
+  }
 }
