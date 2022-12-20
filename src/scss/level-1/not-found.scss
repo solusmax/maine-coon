@@ -1,0 +1,59 @@
+.not-found {
+  width: 100%;
+  height: 100%;
+  padding-left: $mobile-padding;
+  padding-right: $mobile-padding;
+
+  @media (min-width: $tablet-width) {
+    padding-left: $tablet-padding;
+    padding-right: $tablet-padding;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: $desktop-padding;
+    padding-right: $desktop-padding;
+  }
+}
+
+.not-found__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.not-found__title {
+  font-size: 36px;
+}
+
+.not-found__paragraph {
+  font-size: 20px;
+
+  color: $color-white;
+}
+
+.not-found__list {
+  padding: 0;
+
+  color: $color-white;
+
+  list-style: none;
+}
+
+.not-found__link {
+  font-size: 20px;
+  color: $color-white;
+  text-decoration: none;
+
+  transition: 0.15s;
+
+  &:hover {
+    color: rgba($color-white, 0.7);
+  }
+
+  &:active {
+    color: rgba($color-white, 0.5);
+  }
+}
