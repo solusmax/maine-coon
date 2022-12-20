@@ -1,0 +1,108 @@
+.features {
+  display: flex;
+  justify-content: center;
+  background-color: $color-brown-600;
+  padding-top: 54px;
+  padding-bottom: 60px;
+}
+
+.features__inner {
+  width: 100%;
+  max-width: $desktop-width;
+  padding-left: $mobile-padding;
+  padding-right: $mobile-padding;
+}
+
+.features__title {
+  margin: 0;
+  margin-bottom: 23px;
+  padding: 0;
+  text-align: center;
+
+  font-family: $font-yeseva-one;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.features__description {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  text-align: center;
+
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-brown-100;
+}
+
+.features__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.features__item {
+  --feature-icon-width: 120px;
+  --feature-icon-height: 132px;
+
+  position: relative;
+
+  display: block;
+  width: 290px;
+  min-height: 248px;
+  padding-left: 47px;
+  padding-right: 47px;
+  padding-top: calc(var(--feature-icon-height) + 70px);
+  padding-bottom: 50px;
+  text-align: center;
+
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-white;
+
+  background-color: $color-brown-500;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: calc(50% - (var(--feature-icon-width) / 2));
+    top: 40px;
+
+    height: var(--feature-icon-height);
+    width: var(--feature-icon-width);
+
+    background-image: url("../img/features/features-stethoscope.svg");
+    background-size: var(--feature-icon-width) var(--feature-icon-height);
+    background-repeat: no-repeat;
+  }
+
+  &--always {
+    --feature-icon-width: 120px;
+    --feature-icon-height: 106px;
+
+    &::before {
+      background-image: url("../img/features/features-24.svg");
+    }
+  }
+
+  &--food {
+    --feature-icon-width: 85px;
+    --feature-icon-height: 132px;
+
+    &::before {
+      background-image: url("../img/features/features-milk.svg");
+    }
+  }
+}

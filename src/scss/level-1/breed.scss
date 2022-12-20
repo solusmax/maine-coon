@@ -6,6 +6,9 @@
 }
 
 .breed__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   max-width: $desktop-width;
   padding-left: $mobile-padding;
