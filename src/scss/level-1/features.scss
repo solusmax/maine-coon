@@ -4,6 +4,11 @@
   background-color: $color-brown-600;
   padding-top: 54px;
   padding-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 85px;
+    padding-bottom: 100px;
+  }
 }
 
 .features__inner {
@@ -11,6 +16,17 @@
   max-width: $desktop-width;
   padding-left: $mobile-padding;
   padding-right: $mobile-padding;
+
+  @media (min-width: $tablet-width) {
+    padding-left: $tablet-padding;
+    padding-right: $tablet-padding;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .features__title {
@@ -23,6 +39,17 @@
   font-weight: 400;
   font-size: 28px;
   line-height: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 21px;
+
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 18px;
+  }
 }
 
 .features__description {
@@ -35,6 +62,17 @@
   font-size: 14px;
   line-height: 20px;
   color: $color-brown-100;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 59px;
+
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 47px;
+  }
 }
 
 .features__list {
@@ -45,6 +83,14 @@
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+    align-items: start;
+  }
 }
 
 .features__item {
@@ -103,6 +149,52 @@
 
     &::before {
       background-image: url("../img/features/features-milk.svg");
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    --feature-icon-width: 132px;
+    --feature-icon-height: 145px;
+
+    width: 360px;
+
+    font-size: 16px;
+    line-height: 26px;
+
+    &:not(:last-child) {
+      margin-bottom: 42px;
+    }
+
+    &--always {
+      --feature-icon-width: 132px;
+      --feature-icon-height: 117px;
+    }
+
+    &--food {
+      --feature-icon-width: 94px;
+      --feature-icon-height: 145px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 225px;
+    padding-bottom: 50px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      top: 47px;
+    }
+
+    &--always {
+      &::before {
+        top: 63px;
+      }
     }
   }
 }
