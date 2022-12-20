@@ -1,6 +1,8 @@
 .pets {
   display: flex;
   justify-content: center;
+  padding-top: 54px;
+  padding-bottom: 54px;
 }
 
 .pets__inner {
@@ -11,8 +13,6 @@
   max-width: $desktop-width;
   padding-left: $mobile-padding;
   padding-right: $mobile-padding;
-  padding-top: 54px;
-  padding-bottom: 54px;
 }
 
 .pets__title {
