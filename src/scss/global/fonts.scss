@@ -5,7 +5,9 @@
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: local("Roboto Light"), local("Roboto-Light"),
+  src:
+    local("Roboto Light"),
+    local("Roboto-Light"),
     url("#{$fonts}/Roboto-Light.woff2") format("woff2");
 }
 
@@ -16,7 +18,10 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Roboto"), local("Roboto Regular"), local("Roboto-Regular"),
+  src:
+    local("Roboto"),
+    local("Roboto Regular"),
+    local("Roboto-Regular"),
     url("#{$fonts}/Roboto-Regular.woff2") format("woff2");
 }
 
@@ -27,7 +32,9 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: local("Roboto Medium"), local("Roboto-Medium"),
+  src:
+    local("Roboto Medium"),
+    local("Roboto-Medium"),
     url("#{$fonts}/Roboto-Medium.woff2") format("woff2");
 }
 
@@ -38,7 +45,9 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("Roboto Bold"), local("Roboto-Bold"),
+  src:
+    local("Roboto Bold"),
+    local("Roboto-Bold"),
     url("#{$fonts}/Roboto-Bold.woff2") format("woff2");
 }
 
@@ -49,7 +58,9 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Yeseva One"), local("Yeseva One Regular"),
+  src:
+    local("Yeseva One"),
+    local("Yeseva One Regular"),
     local("Yeseva-One-Regular"),
     url("#{$fonts}/YesevaOne-Regular.woff2") format("woff2");
 }
